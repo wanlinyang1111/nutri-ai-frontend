@@ -3,7 +3,7 @@
 A responsive, multilingual nutrition assistant web app powered by AI.  
 This is the **frontend** of the Nutri AI system, built with **React**, supporting **voice input**, **AI chatbot**, and **personalized health tracking**.
 
-> 🎥 Demo video and screenshots included below.  
+> 🎥 Demo video included below.  
 > 🔒 Supports both real user login and **Demo Mode** (no backend required).
 
 ---
@@ -142,6 +142,40 @@ nutri-ai-frontend/
 - AI chat and voice input require backend + OpenAI API integration to function fully.
 - For mock exploration, use Demo Login to view all pages without backend.
 ```
+
+---
+
+## 🧩 Nutri AI (User Side) - Architecture
+
+```
+🌐 User Browser
+   |
+   |── React Frontend (nutri-ai-frontend)
+   |    - User Interface: meal logging, AI chatbot, profile form
+   |    - Voice-to-text meal input
+   |    - Calls backend API
+   |
+   ▼
+🧠 OpenAI GPT API
+   |    - Generates personalized nutrition summaries
+   |
+   ▼
+🔗 Flask Backend API (nutri-ai-backend)
+   |    - Handles requests from frontend
+   |    - Stores/retrieves data from database
+   |
+   ▼
+🗂 PostgreSQL Database (nut_basedb)
+   |    - User profiles
+   |    - Meal records and photos
+   |    - Chat logs and AI analysis reports
+```
+
+### ✅ Highlights:
+- Frontend is standalone and mobile responsive
+- Voice meal input analyzed and categorized by GPT
+- Daily records are stored and retrievable via user ID
+- Personalized AI reports are generated from combined user data
 
 ---
 
