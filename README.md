@@ -8,33 +8,15 @@ This is the **frontend** of the Nutri AI system, built with **React**, supportin
 
 ---
 
-## 🚀 Live Demo (Optional)
+## 🎬 Demo Preview
 
-```
+🟠 Click “Demo Login” on the homepage to explore the interface without backend.
+
+## 🎥 Demo Video
 
 [![Watch the demo](https://img.youtube.com/vi/zjjJ3gMtE5g/hqdefault.jpg)](https://youtu.be/zjjJ3gMtE5g)
 
 👉 Click the image above to watch the full demo on YouTube.
-
-```
-
----
-
-## 🎬 Demo Preview
-
-```
-🟠 Click “Demo Login” on the homepage to explore the interface without backend.
-```
-
-```
-📷 Screenshots:
-
-- Homepage  
-  ![Homepage Screenshot](demo-photo/homepage.png)
-
-- AI Chat  
-  ![AI Chat Screenshot](demo-photo/chat.png)
-```
 
 ---
 
@@ -43,9 +25,10 @@ This is the **frontend** of the Nutri AI system, built with **React**, supportin
 ```
 - 🌐 Multilingual UI (Chinese, English, Japanese)
 - 🔐 User login, registration, and profile form
-- 💬 AI-powered dietary chatbot (OpenAI)
+- 📝 Daily meal tracking & history view
+- 📊 Personalized AI summary reports based on user data
+- 💬 AI-powered dietary assistance (OpenAI)
 - 🎙️ Voice input to record meals, with AI classification
-- 🧪 Demo Mode with mock user experience
 - 📱 Responsive layout (mobile-first)
 - 📦 Docker/Nginx deployment ready
 ```
