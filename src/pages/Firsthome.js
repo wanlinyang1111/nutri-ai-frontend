@@ -62,14 +62,14 @@ const Firsthome = () => {
       {/* LOGO */}
       <img
         src="/images/logo.png"
-        alt="Voyager Logo"
+        alt="nutri-ai Logo"
         className="logo"
         style={{ width: "180px", height: "auto", marginBottom: "20px" }}
       />
 
       {/* 軟體名稱 */}
       <h1 style={{ color: "#333", fontSize: "2.5rem", margin: "10px 0" }}>
-        Voyager
+        nutri-ai
       </h1>
 
       {/* Slogan */}
