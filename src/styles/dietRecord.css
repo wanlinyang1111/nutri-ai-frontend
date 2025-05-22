@@ -1,0 +1,191 @@
+.diet-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: env(safe-area-inset-bottom); /* iPhone 適配 */
+}
+
+.diet-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.diet-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  padding: 8px;
+  margin: -8px;
+  color: #333;
+}
+
+.day-selector {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+
+.day-button {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 15px;
+  color: #333;
+}
+
+.day-button.active {
+  background-color: #ff7843;
+  color: white;
+  border-color: #ff7843;
+}
+
+.date-selector {
+  padding: 12px;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+
+.date-selector input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.meals-list {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meal-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.meal-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.meal-header h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.meal-content {
+  padding: 12px;
+}
+
+.meal-content textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  resize: none;
+}
+
+.photo-section {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+.upload-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 1px dashed #ddd;
+}
+
+.upload-button span {
+  color: #666;
+  font-size: 15px;
+}
+
+.photo-preview {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.change-photo {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.submit-section {
+  position: sticky;
+  bottom: 0;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background-color: #ff7843;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* iPhone X 及以上機型的安全區域適配 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .submit-section {
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+}
+
+/* 針對較小螢幕的優化 */
+@media screen and (max-width: 320px) {
+  .meal-header h2 {
+    font-size: 15px;
+  }
+
+  .day-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

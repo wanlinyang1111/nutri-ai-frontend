@@ -1,0 +1,111 @@
+/* General Page Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fdfbee; /* 背景色 */
+  color: #333;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Logo Styles */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out; /* 加入漸入動畫 */
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fdfbee; /* 白色背景 */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1.2s ease-in-out; /* 動態進場效果 */
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7843;
+  outline: none;
+}
+
+/* Button Styles */
+.button-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7843;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #ff5722;
+  transform: scale(1.05);
+}
+
+/* Other Ways to Register */
+.other-register-options {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.other-register-options p {
+  font-size: 14px;
+  color: #555;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 調整間距 */
+  margin-top: 10px;
+}
+
+.social-button {
+  background-color: #8597c1; /* 主色調背景 */
+  width: 50px; /* 固定寬高，形成圓形 */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 圓形背景 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.social-button:hover {
+  transform: scale(1.1); /* 放大效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+  width: 24px;
+  height: auto;
+}

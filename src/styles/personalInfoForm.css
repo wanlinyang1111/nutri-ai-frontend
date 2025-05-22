@@ -1,0 +1,258 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 禁止水平滾動 */
+  overflow-y: auto; /* 允許垂直滾動 */
+}
+
+.personal-info-form {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 45px;
+  background-color: #fdfbee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto; /* 允許滾動 */
+  max-height: 80vh; /* 設定表單的最大高度，防止超出視窗 */
+}
+
+h2 {
+  text-align: center;
+  color: #000000ab;
+}
+
+.section-container {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8597c1;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.section-header:hover {
+  background-color: #09090994;
+}
+
+.section-header {
+  text-align: center; /* 讓子元素文字置中 */
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.section-content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  max-height: 400px; /* 設置展開內容的最大高度 */
+  overflow-y: auto; /* 啟用垂直滾動條 */
+  transition: max-height 0.3s ease; /* 平滑過渡 */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 50%; /* 按鈕寬度為父容器的 50% */
+  padding: 10px;
+  background-color: #ff7843;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; /* 設置按鈕為塊級元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+button:hover {
+  background-color: #ffcc84d2;
+}
+
+.logout-button {
+  position: fixed;
+  top: 10px;
+  right: 0; /* 確保對齊右側 */
+  width: auto;
+  padding: 10px 20px;
+  background-color: rgba(211, 211, 211, 0.8);
+  color: white;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 9999;
+  white-space: nowrap;
+}
+
+.logout-button:hover {
+  background-color: #09090994;
+}
+
+@media screen and (max-width: 768px) {
+  .logout-button {
+    right: 0; /* 確保縮小時也對齊右側 */
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logout-button {
+    right: 0; /* 同樣確保在小視窗下 */
+    padding: 5px 10px;
+  }
+}
+
+.alert {
+  background-color: #ffefc3;
+  color: #ff7843;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.edit-toggle-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: auto; /* 讓按鈕寬度適應內容 */
+  margin-left: 10px; /* 與標題保持間距 */
+  display: flex;
+  align-items: center;
+}
+
+.edit-toggle-button:hover {
+  background-color: #45a049;
+}
+
+.no-data-alert {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-data-alert p {
+  font-size: 16px;
+  color: #ff0000;
+}
+
+.no-data-alert button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.no-data-alert button:hover {
+  background-color: #45a049;
+}
+
+.field-value {
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  min-height: 20px;
+}
+
+.section-container {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  padding: 10px;
+  background-color: #8597c1;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.submission-status {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.submission-status.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.submission-status.error {
+  background-color: #f2dede;
+  color: #a94442;
+}

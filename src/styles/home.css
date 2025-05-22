@@ -1,0 +1,110 @@
+/*
+全域樣式（body）放在最前面，因為這是應用於所有頁面的基礎樣式。
+單一元素樣式（h1, input, button）放在接下來，這些元素在頁面上普遍存在。
+表單容器樣式放在元素樣式之後，定義了如何佈局表單。
+按鈕樣式分開了 button 和 .register-button 的樣式，讓每個樣式能夠單獨管理。
+按鈕容器的樣式放在最後，這樣可以集中處理按鈕的排列與間距。
+響應式設計部分最後放置，確保手機或小螢幕尺寸下的樣式覆蓋之前的設定。
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  height: 100vh; /* 讓畫面填滿整個螢幕 */
+  overflow: hidden; /* 防止滾動條顯示 */
+}
+
+/* 標題樣式 */
+h1 {
+  font-size: 2em;
+  color: #ff7843;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* 輸入框樣式 */
+input {
+  width: 300%; /* 將輸入框的寬度設為三倍原本的大小 */
+  box-sizing: border-box; /* 確保 padding 和 border 不影響寬度 */
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+  margin: 10px 0; /* 表單項目之間的間隔 */
+}
+
+/* 表單容器 */
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  justify-content: space-between; /* 均勻分配空間 */
+  align-items: center;
+  padding: 10px;
+  height: 100%; /* 使容器填滿可用高度 */
+}
+
+/* 忘記密碼連結樣式 */
+.forgot-password {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #ff7843; /* 主色調 */
+}
+
+/* 登入按鈕樣式 */
+button {
+  background-color: #ff7843;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+/* 註冊按鈕樣式 */
+.register-button {
+  background-color: #8597c1;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.register-button:hover {
+  background-color: #6e84a3;
+}
+
+/* 註冊和登入按鈕容器 */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* 均勻分配按鈕 */
+  gap: 5px; /* 減小按鈕之間的間距 */
+  width: 100%;
+  max-width: 450px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+  input {
+    width: 150%; /* 當螢幕大小縮小時，調整為較小的寬度 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input {
+    width: 90%; /* 在最小的螢幕上，讓輸入框占據較大比例的寬度 */
+    margin: 10px 0; /* 保持輸入框之間的間隔 */
+  }
+}

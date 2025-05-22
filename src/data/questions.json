@@ -1,0 +1,253 @@
+[
+  {
+    "section": "一般資訊",
+    "fields": [
+      {
+        "label": "姓名",
+        "type": "text",
+        "name": "name",
+        "placeholder": "請輸入您的姓名",
+        "required": true
+      },
+      {
+        "label": "生理性別",
+        "type": "select",
+        "name": "gender",
+        "options": ["男", "女"],
+        "required": true
+      },
+      {
+        "label": "生日",
+        "type": "taiwan_date",
+        "name": "birth_date",
+        "required": true
+      },
+      {
+        "label": "年齡 (自動計算)",
+        "type": "text",
+        "name": "calculated_age",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "label": "語言",
+        "type": "select",
+        "name": "language",
+        "options": ["國語", "台語", "客語", "英文", "其他"],
+        "required": true
+      },
+      {
+        "label": "初診或複診",
+        "type": "select",
+        "name": "first_or_repeat_visit",
+        "options": ["初診", "複診"],
+        "required": true
+      },
+      {
+        "label": "請問您的來診目的？",
+        "type": "text",
+        "name": "visit_purpose",
+        "required": true
+      },
+      {
+        "label": "運動頻率",
+        "type": "select",
+        "name": "exercise_frequency",
+        "options": ["無", "偶爾", "經常"],
+        "required": true
+      },
+      {
+        "label": "請敘述您的運動習慣",
+        "type": "text",
+        "name": "exercise_habit_detail",
+        "placeholder": "e.g. 每週3次快走30分鐘",
+        "required": true
+      },
+      {
+        "label": "抽菸頻率",
+        "type": "select",
+        "name": "smoking_frequency",
+        "options": ["無", "偶爾", "經常"],
+        "required": true
+      },
+      {
+        "label": "飲酒頻率",
+        "type": "select",
+        "name": "drinking_frequency",
+        "options": ["無", "偶爾", "經常"],
+        "required": true
+      },
+      {
+        "label": "嚼檳榔頻率",
+        "type": "select",
+        "name": "betelnut_frequency",
+        "options": ["無", "偶爾", "經常"],
+        "required": true
+      }
+    ]
+  },
+  {
+    "section": "生活方式",
+    "fields": [
+      {
+        "label": "職業名稱",
+        "type": "text",
+        "name": "occupation",
+        "placeholder": "請輸入您的職業"
+      },
+      {
+        "label": "值班班別",
+        "type": "select",
+        "name": "shift_type",
+        "options": ["日班", "夜班", "輪班"]
+      },
+      {
+        "label": "每日活動量",
+        "type": "text",
+        "name": "daily_activity",
+        "placeholder": "例如：低、中、高"
+      },
+      {
+        "label": "起床時間",
+        "type": "time",
+        "name": "wakeup_time"
+      },
+      {
+        "label": "睡覺時間",
+        "type": "time",
+        "name": "sleep_time"
+      },
+      {
+        "label": "請敘述您的特殊飲食喜好",
+        "type": "TEXT",
+        "name": "diet_preferences_detail",
+        "placeholder": "e.g. 喜歡吃辣、吃甜食等"
+      },
+      {
+        "label": "是否有吃營養品的習慣（若有請列出）",
+        "type": "TEXT",
+        "name": "supplements_habit",
+        "placeholder": "e.g. 一天一顆維他命"
+      }
+    ]
+  },
+  {
+    "section": "健康資訊",
+    "fields": [
+      {
+        "label": "家族史",
+        "type": "textarea",
+        "name": "family_history",
+        "placeholder": "請描述您的家族病史"
+      },
+      {
+        "label": "過去病史",
+        "type": "textarea",
+        "name": "past_medical_history",
+        "placeholder": "請描述您的過去病史"
+      },
+      {
+        "label": "目前使用藥物和頻率",
+        "type": "textarea",
+        "name": "current_medication",
+        "placeholder": "請列出您的用藥情況"
+      },
+
+      {
+        "label": "飲酒量",
+        "type": "text",
+        "name": "alcohol_consumption",
+        "placeholder": "例如：每週2杯"
+      }
+    ]
+  },
+  {
+    "section": "身體狀況",
+    "fields": [
+      {
+        "label": "當前身高 (cm)",
+        "type": "number",
+        "name": "current_height_cm",
+        "placeholder": "請輸入您的身高 (cm)"
+      },
+      {
+        "label": "當前體重 (kg)",
+        "type": "number",
+        "name": "current_weight_kg",
+        "placeholder": "請輸入您的體重 (kg)"
+      },
+      {
+        "label": "經常性體重 (kg)",
+        "type": "number",
+        "name": "usual_body_weight",
+        "placeholder": "請輸入您的經常性體重 (kg)"
+      },
+      {
+        "label": "當前腰圍",
+        "type": "number",
+        "name": "current_waist_cm",
+        "placeholder": "請輸入您的腰圍 (cm)"
+      },
+      {
+        "label": "體脂率",
+        "type": "number",
+        "name": "body_fat_percentage",
+        "placeholder": "請輸入您的體脂率 (%)"
+      },
+      {
+        "label": "最近一年體重變化",
+        "type": "text",
+        "name": "weight_change_last_year",
+        "placeholder": "請描述最近一年的體重變化"
+      },
+      {
+        "label": "牙齒狀態",
+        "type": "text",
+        "name": "dental_status",
+        "placeholder": "請描述您的牙齒狀況"
+      },
+      {
+        "label": "咀嚼功能",
+        "type": "text",
+        "name": "chewing_function",
+        "placeholder": "請描述您的咀嚼能力"
+      },
+      {
+        "label": "吞嚥功能",
+        "type": "text",
+        "name": "swallowing_function",
+        "placeholder": "請描述您的吞嚥能力"
+      },
+      {
+        "label": "食慾狀況",
+        "type": "text",
+        "name": "appetite_status",
+        "placeholder": "請描述您的食慾"
+      },
+      {
+        "label": "消化狀況",
+        "type": "text",
+        "name": "digestion_status",
+        "placeholder": "請描述您的消化狀況"
+      },
+      {
+        "label": "口味",
+        "type": "text",
+        "name": "taste_preferences",
+        "placeholder": "請描述您的口味"
+      },
+      {
+        "label": "日常空腹血糖數值",
+        "type": "number",
+        "name": "daily_fasting_blood_glucose",
+        "placeholder": "請輸入您的空腹血糖數值 (mg/dL)"
+      },
+      {
+        "label": "日常胰島素施打劑量",
+        "type": "number",
+        "name": "daily_insulin_dosage",
+        "placeholder": "請輸入您的胰島素劑量 (單位)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+.ai-chatbox-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* ✅ overflow-y: auto 改成只用在 AIChatbox 區域上 */
+}
+
+.chatbox-scrollable {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* 確保 navbar 在較低的層級 */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.voice-chat-popup {
+  animation: slide-in 0.25s ease-out;
+}

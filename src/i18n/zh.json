@@ -1,0 +1,39 @@
+{
+  "slogan": "健康管理平台",
+  "register": "註冊",
+  "login": "登入",
+  "dashboard": {
+    "welcome": "歡迎來到 Voyage 健康管理平台",
+    "description": "在這裡，我們將一起啟航，探索您的飲食與健康之旅。選擇下邊欄的功能，開始與營養師一同制定專屬您的健康計畫，讓每一天都充滿活力！"
+  },
+  "signup": {
+    "email": "電子郵件",
+    "password": "密碼",
+    "confirmPassword": "再次輸入密碼",
+    "button": "註冊",
+    "otherRegisterOptions": "其他註冊方式",
+    "alert": {
+      "fillFields": "請填寫所有欄位！",
+      "passwordMismatch": "密碼與確認密碼不一致！",
+      "success": "註冊成功！",
+      "failure": "註冊失敗：",
+      "networkError": "網絡錯誤，請稍後再試！"
+    }
+  },
+  "homePage": {
+    "email": "電子郵件",
+    "password": "密碼",
+    "forgotPassword": "忘記密碼?",
+    "button": "登入",
+    "otherLoginOptions": "其他登入方式",
+    "iosLogin": "iOS 登入",
+    "googleLogin": "Google 登入",
+    "alert": {
+      "failure": "登入失敗：",
+      "networkError": "網絡錯誤，請稍後再試！"
+    }
+  },
+  "personalInfoPage": {
+    "title": "個人資訊"
+  }
+}

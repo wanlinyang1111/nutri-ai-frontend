@@ -1,0 +1,56 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #ff7843;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  border-top: 1px solid #fafafa; /* 增加整體上方分隔線 */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* 讓圖示在整個寬度均分 */
+}
+
+.navbar ul li {
+  flex: 1; /* 平均分配寬度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* 為區隔線準備 */
+}
+
+.navbar ul li + li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #fafafa; /* 細線顏色 */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar ul li img {
+  width: 35px; /* 放大圖示大小 */
+  height: auto; /* 維持比例 */
+  transition: transform 0.3s ease; /* 滑鼠移入效果 */
+}
+
+.navbar ul li img:hover {
+  transform: scale(1.3); /* 增加放大效果 */
+}

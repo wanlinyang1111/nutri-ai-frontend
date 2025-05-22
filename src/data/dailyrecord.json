@@ -1,0 +1,71 @@
+{
+  "exerciseFields": [
+    {
+      "name": "exercise_type",
+      "label": "運動類型",
+      "type": "text",
+      "placeholder": "輸入運動類型",
+      "dbField": "exercise_type"
+    },
+    {
+      "name": "start_time",
+      "label": "開始時間",
+      "type": "time",
+      "placeholder": "選擇時間",
+      "dbField": "start_time"
+    },
+    {
+      "name": "duration",
+      "label": "持續時間",
+      "type": "text",
+      "placeholder": "例如：00:30:00",
+      "dbField": "duration"
+    }
+  ],
+  "dietFields": [
+    {
+      "name": "diet_time",
+      "label": "飲食時間",
+      "type": "time",
+      "placeholder": "選擇時間",
+      "dbField": "diet_time"
+    },
+    {
+      "name": "diet_time_type",
+      "label": "餐別",
+      "type": "text",
+      "placeholder": "例如：早餐",
+      "dbField": "diet_time_type"
+    },
+    {
+      "name": "diet_content",
+      "label": "飲食內容",
+      "type": "textarea",
+      "placeholder": "輸入飲食內容",
+      "dbField": "diet_content"
+    }
+  ],
+  "liquidFields": [
+    {
+      "name": "liquid_time",
+      "label": "飲用時間",
+      "type": "time",
+      "placeholder": "選擇時間",
+      "dbField": "liquid_time"
+    },
+    {
+      "name": "liquid_name",
+      "label": "液體名稱",
+      "type": "text",
+      "placeholder": "輸入液體名稱",
+      "dbField": "liquid_name"
+    },
+    {
+      "name": "volume",
+      "label": "飲用量",
+      "type": "number",
+      "placeholder": "例如：300",
+      "dbField": "volume"
+    }
+  ]
+}

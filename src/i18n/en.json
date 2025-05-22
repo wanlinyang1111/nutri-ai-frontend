@@ -1,0 +1,39 @@
+{
+  "slogan": "Health Management Platform",
+  "register": "Register",
+  "login": "Login",
+  "dashboard": {
+    "welcome": "Welcome to the Voyage Health Management Platform",
+    "description": "Here, we embark together to explore your diet and health journey. Choose features from the sidebar to start creating your personalized health plan with a nutritionist and make every day full of vitality!"
+  },
+  "signup": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "button": "Register",
+    "otherRegisterOptions": "Other Registration Options",
+    "alert": {
+      "fillFields": "Please fill in all fields!",
+      "passwordMismatch": "Passwords do not match!",
+      "success": "Registration successful!",
+      "failure": "Registration failed: ",
+      "networkError": "Network error, please try again later!"
+    }
+  },
+  "homePage": {
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "button": "Login",
+    "otherLoginOptions": "Other login options:",
+    "iosLogin": "iOS Login",
+    "googleLogin": "Google Login",
+    "alert": {
+      "failure": "Login failed: ",
+      "networkError": "Network error, please try again later!"
+    }
+  },
+  "personalInfoPage": {
+    "title": "Personal Information"
+  }
+}

@@ -1,0 +1,238 @@
+/* 固定 chatbox 在畫面上，避免佔用版面導致頁面移動 */
+.ai-chatbox {
+  position: fixed; /* 固定在畫面上，不會跟隨頁面捲動 */
+  top: 100px; /* 與頁面頂端距離，可自行調整 */
+  left: 50%; /* 水平置中 */
+  transform: translateX(-50%); /* 置中對齊 */
+  z-index: 100; /* 確保在其他元素（例如 navbar）之上 */
+
+  /* 保持高度與寬度，不因內容增多而改變 */
+  height: 70vh; /* 固定高度，視需求可調整 */
+  width: 100vw; /* 固定寬度 */
+  max-width: 600px; /* 最高 600px，可依需求加大或縮小 */
+
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* 取消多餘的上下 margin，避免對版面有推擠效果 */
+  margin: 0 auto;
+}
+
+/* 聊天內容區：可捲動 */
+.chat-history {
+  flex: 1;
+  overflow-y: auto; /* 超出範圍時出現滾動條 */
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* 無對話時的提示文字 */
+.empty-chat {
+  text-align: center;
+  color: #8597c1;
+  font-size: 1rem;
+}
+
+/* 用來包住 user-message 跟 ai-response，保證一組對話在一起 */
+.chat-block {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 用戶訊息：靠右 */
+.user-message {
+  align-self: flex-end;
+  background-color: #d1e7dd;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 8px 12px;
+  max-width: 70%;
+}
+.qrcode-modal {
+  position: relative; /* 讓內部的絕對定位以這個容器為基準 */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-btn {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px; /* 如需留白可調整 */
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* AI 訊息：靠左 */
+.ai-response {
+  align-self: flex-start;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 8px 12px;
+  max-width: 70%;
+}
+
+.chat-message {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* 輸入區、按鈕等樣式，保持不變 */
+.chat-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.send-button {
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #e56e3d;
+}
+
+.meal-record-button {
+  background-color: #ff7843;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.meal-record-button:hover {
+  background-color: #e56e3d;
+}
+
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 300px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notification-button {
+  margin-top: 16px;
+  padding: 8px 24px;
+  background-color: #ff7843;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.notification-button:hover {
+  background-color: #e56e3d;
+}
+
+.meals-container {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.meal-item {
+  width: 100%; /* Take full width of grid cell */
+  margin: 0; /* Remove margins */
+}
+
+.meal-content {
+  position: relative;
+  padding: 15px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  height: 100%vh; /* Take full height of parent */
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 響應式設定：在小螢幕時縮小高度、寬度 */
+@media (max-width: 768px) {
+  .ai-chatbox {
+    height: 65vh; /* 視需求調整，在小螢幕時更小一些 */
+    width: 100vw;
+    max-width: none; /* 移除最大寬度限制 */
+    padding: 16px;
+  }
+
+  .chat-input {
+    font-size: 0.9rem;
+  }
+
+  .meals-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .meals-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .meal-content {
+    min-height: 150px; /* Smaller height on mobile */
+  }
+}

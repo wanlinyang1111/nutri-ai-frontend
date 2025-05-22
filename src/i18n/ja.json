@@ -1,0 +1,39 @@
+{
+  "slogan": "健康管理プラットフォーム",
+  "register": "登録",
+  "login": "ログイン",
+  "dashboard": {
+    "welcome": "Voyage健康管理プラットフォームへようこそ",
+    "description": "ここでは、一緒に旅に出て、あなたの食事と健康の旅を探索します。サイドバーの機能を選択して、栄養士と一緒にあなた専用の健康プランを作成し、毎日を活力に満ちたものにしましょう！"
+  },
+  "signup": {
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "confirmPassword": "パスワードを再入力",
+    "button": "登録",
+    "otherRegisterOptions": "その他の登録方法",
+    "alert": {
+      "fillFields": "すべての項目を入力してください！",
+      "passwordMismatch": "パスワードが一致しません！",
+      "success": "登録が成功しました！",
+      "failure": "登録に失敗しました: ",
+      "networkError": "ネットワークエラーです。後でもう一度お試しください！"
+    }
+  },
+  "homePage": {
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "forgotPassword": "パスワードを忘れた場合",
+    "button": "ログイン",
+    "otherLoginOptions": "その他のログイン方法：",
+    "iosLogin": "iOS ログイン",
+    "googleLogin": "Google ログイン",
+    "alert": {
+      "failure": "ログイン失敗：",
+      "networkError": "ネットワークエラーです。後でもう一度お試しください！"
+    }
+  },
+  "personalInfoPage": {
+    "title": "個人情報"
+  }
+}
