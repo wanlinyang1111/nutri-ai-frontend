@@ -11,7 +11,11 @@ This is the **frontend** of the Nutri AI system, built with **React**, supportin
 ## 🚀 Live Demo (Optional)
 
 ```
-Coming soon...
+
+[![Watch the demo](https://img.youtube.com/vi/zjjJ3gMtE5g/hqdefault.jpg)](https://youtu.be/zjjJ3gMtE5g)
+
+👉 Click the image above to watch the full demo on YouTube.
+
 ```
 
 ---
