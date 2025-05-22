@@ -145,7 +145,7 @@ nutri-ai-frontend/
 
 ---
 
-## 🧩 Nutri AI (User Side) - Architecture
+## 🧩 User Side - Architecture
 
 ```
 🌐 User Browser
